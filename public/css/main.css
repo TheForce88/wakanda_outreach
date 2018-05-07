@@ -1,0 +1,455 @@
+body {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+  /*background-color: black;*/
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+  /*margin: 0 0 35px;*/
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 25px;
+}
+
+@media (min-width: 768px) {
+  /*p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 35px;
+  }*/
+}
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #42DCA3;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: #1d9b6c;
+}
+
+#mainNav {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #adbccd;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 14px;
+  padding: 11px;
+  color: white;
+  border: 1px solid white;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+}
+
+#mainNav a {
+  color: white;
+}
+
+#mainNav .navbar-nav .nav-item {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    letter-spacing: 1px;
+    border-bottom: none;
+    background: transparent;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: #adbccd;
+  }
+  #mainNav .nav-link.active {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  #mainNav .nav-link.active:hover {
+    color: white;
+  }
+}
+
+header {
+  background: white;
+}
+
+.backdrop {
+  background: url("../img/the-roaming-platypus-310824-unsplash.jpg") center;
+  background-size: contain;
+  margin: auto;
+  opacity: 0.9;
+  height: 100vh;
+}
+
+.text {
+  padding: 150px 0 0 0;
+  color: white;
+  border: 4px solid;
+  background: rgb(34, 22, 86);
+  mix-blend-mode: multiply;
+  font: bolder 12vw 'Alfa Slab One';
+  text-align: center;
+  margin: 0;
+  height: 100vh;
+}
+
+.features-container {
+  padding: 40px 0 40px 0;
+}
+
+.features-container h3, .intro-p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  height: 75px;
+  padding: 20px;
+  margin: 0;
+}
+
+.features-container p {
+  margin: 0 10px;
+  height: 120px;
+}
+
+.text-box {
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: -50%;
+}
+
+.icon-box {
+  height: 35px;
+}
+.material-icons {
+  color: rgb(34, 22, 86);
+  font-size: 35px;
+}
+
+.btn-circle {
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  margin-top: 15px;
+  line-height: 45px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  color: white;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  background: transparent;
+}
+
+.btn-circle:focus, .btn-circle:hover {
+  color: white;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+  background-color: #adbccd;
+  display: flex;
+  height: 100vh;
+}
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 200px 25px 0;
+}
+
+.p-5 {
+  padding: 5rem!important;
+}
+
+div.col-lg-4.order-lg-1 {
+  padding-left: 3rem;
+}
+
+.section-text h2 {
+  color: rgb(34, 22, 86);
+  padding: 15px 0;
+}
+
+.section-text .description {
+  height: 300px;
+}
+
+.section-text .btn-group {
+  font-family: 'Source Sans Pro', sans-serif;
+  border: 1px solid white;
+  padding: 10px;
+  transition: all .3s ease-in-out;
+}
+
+.section-text .btn-group:hover {
+  border: 2px solid #10bfdd;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+
+.img-box {
+  vertical-align: middle;
+  margin: 200px 50px 200px 120px;
+}
+
+.bg-img {
+  height: 250px;
+  width: 200px;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.content-section {
+  padding-top: 150px 0 150px 0;
+}
+
+.vibranium-uses h4, h2 {
+  text-transform: none;
+  font-size: 25px;
+  color: rgb(34, 22, 86);
+}
+
+.title {
+  text-align: center;
+  padding: 200px 200px 50px 200px;
+}
+
+.title .title-description {
+  font-size: 16px;
+}
+
+ul.use-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px 50px 0;
+}
+
+li.col-lg-4.vibranium-list-item {
+  display: flex;
+  padding: 0 10px 50px 10px;
+}
+
+i.material-icons.vibranium-icon {
+  padding: 10px;
+}
+
+.vibranium-uses h4 {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.vibranium-uses, .vibranium-container {
+  color: #6c757d;
+}
+
+.use-list {
+  font-family: 'Source Sans Pro', sans-serif;
+  list-style: none;
+}
+
+.use-list li {
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+h3.carousel-text {
+  color: rgb(34, 22, 86);
+  text-align: center;
+}
+
+p.carousel-text {
+  color: white;
+  text-align: center;
+  padding: 25px 100px 25px 100px;
+}
+
+.bg-carousel {
+  background-color: #adbccd;
+}
+
+.carousel-box {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-top: 45px;
+  width: 80vw;
+  margin: 5rem auto;
+}
+
+.carousel-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.carousel-img {
+  height: 65vh;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.download-section {
+  color: white;
+  background: url("../img/andreas-kind-271286-unsplash.jpg") no-repeat center center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+}
+
+@media (min-width: 992px) {
+  .content-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  #map {
+    height: 350px;
+  }
+}
+
+.btn {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.btn-default {
+  color: rgb(34, 22, 86);
+  border: 1px solid rgb(34, 22, 86);
+  background-color: transparent;
+}
+
+.btn-default:focus, .btn-default:hover {
+  color: white;
+  border: 1px solid rgb(34, 22, 86);
+  outline: none;
+  background-color: rgb(34, 22, 86);
+}
+
+ul.banner-social-buttons {
+  margin-top: 0;
+}
+
+@media (max-width: 1199px) {
+  ul.banner-social-buttons {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  ul.banner-social-buttons li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.banner-social-buttons li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+footer {
+  color: white;
+  background: #adbccd;
+  padding: 30px 0;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+::-moz-selection {
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+  text-shadow: none;
+}
+
+::selection {
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+@media (max-width: 1250px) {
+  .section-text {
+    padding: 25px 50px 25px 0;
+  }
+  .section-text .description {
+    height: 330px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .backdrop {
+    background: url("../img/denys-nevozhai-109718-unsplash.jpg") center;
+    background-size: contain;
+    margin: auto;
+    opacity: 0.9;
+    height: 100vh;
+  }
+  div.col-lg-4.order-lg-1 {
+    padding-left: 2rem;
+  }
+}
