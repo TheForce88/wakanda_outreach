@@ -38,4 +38,12 @@ $(document).ready(function(){
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+
+  function showSection(){
+    console.log("you clicked me!");
+    $("#image").fadeOut()
+    // css("display", "none");
+  }
+
+  $('#hidden-btn').on('click', showSection);
 })

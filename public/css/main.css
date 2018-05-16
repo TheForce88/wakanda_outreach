@@ -222,7 +222,7 @@ div.col-lg-4.order-lg-1 {
   height: 300px;
 }
 
-.section-text .btn-group {
+#hidden-btn, .section-text .btn-group {
   font-family: 'Source Sans Pro', sans-serif;
   border: 1px solid white;
   padding: 10px;
@@ -452,4 +452,88 @@ img::-moz-selection {
   div.col-lg-4.order-lg-1 {
     padding-left: 2rem;
   }
+}
+
+@media (min-width: 550px) {
+  div#hidden-btn.btn-group {
+    display: none;
+  }
+}
+
+@media screen and (orientation:portrait) {
+  body, .card, div.row.align-itmes-center.main-content {
+    width: 110vw;
+    overflow-x: hidden;
+  }
+
+  #mainNav {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .backdrop {
+    background: url("../img/pawel-nolbert-291146-unsplash.jpg") center;
+  }
+
+  .text {
+    mix-blend-mode: screen;
+  }
+
+  #about {
+    height: 100vh;
+  }
+
+  .img-box {
+    height: 100vh;
+    margin: 200px 50px 10px 100px;
+  }
+
+  #hidden-btn {
+    margin: 20px 0 0 30px;
+  }
+
+  .title {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 50px 30px 20px;
+  }
+  div.col-lg-8.order-lg-2.section-text {
+    padding: 25px 0 25px 0;
+  }
+
+  div.btn-group {
+    margin-top: 20px;
+  }
+
+  .p-5 {
+    padding: 3rem!important;
+  }
+
+  div.features-container {
+    padding: 0;
+  }
+
+  div.col-lg-4.order-lg-1 {
+    margin-left: -20px;
+  }
+
+  div#gallery.bg-carousel {
+    width: 100vw;
+  }
+
+  .carousel-box {
+    width: 100vw;
+    padding-top: 30px;
+  }
+
+  p.carousel-text {
+    padding: 2px 50px 25px 50px;
+  }
+
+  p {
+    margin: 0;
+  }
+
 }
